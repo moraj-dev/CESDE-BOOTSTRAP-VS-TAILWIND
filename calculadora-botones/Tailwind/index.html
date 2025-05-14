@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/calculadora-botones/Tailwind/style.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white shadow-xl rounded-xl p-5 w-72">
+    <div id="pantalla" class="bg-gray-200 text-right text-2xl p-4 rounded mb-4">0</div>
+    <div class="grid grid-cols-4 gap-2">
+      <!-- Fila 1 -->
+      <button class="btn" onclick="press('7')">7</button>
+      <button class="btn" onclick="press('8')">8</button>
+      <button class="btn" onclick="press('9')">9</button>
+      <button class="btn bg-yellow-400" onclick="press('/')">/</button>
+
+      <!-- Fila 2 -->
+      <button class="btn" onclick="press('4')">4</button>
+      <button class="btn" onclick="press('5')">5</button>
+      <button class="btn" onclick="press('6')">6</button>
+      <button class="btn bg-yellow-400" onclick="press('*')">*</button>
+
+      <!-- Fila 3 -->
+      <button class="btn" onclick="press('1')">1</button>
+      <button class="btn" onclick="press('2')">2</button>
+      <button class="btn" onclick="press('3')">3</button>
+      <button class="btn bg-yellow-400" onclick="press('-')">-</button>
+
+      <!-- Fila 4 -->
+      <button class="btn bg-red-400" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="press('0')">0</button>
+      <button class="btn bg-green-500" onclick="calculate()">=</button>
+      <button class="btn bg-yellow-400" onclick="press('+')">+</button>
+    </div>
+  </div>
+
+  
+
+  <script src="/calculadora-botones/_JS/script-calc.js"></script>
+</body>
+</html>

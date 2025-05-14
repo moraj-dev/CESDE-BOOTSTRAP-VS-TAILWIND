@@ -1,0 +1,11 @@
+.btn {
+  background-color: #d1d5db; /* bg-gray-300 */
+  font-size: 1.25rem;         /* text-xl */
+  font-weight: 700;           /* font-bold */
+  padding: 1rem;              /* p-4 */
+  border-radius: 0.5rem;      /* rounded */
+}
+
+.btn:hover {
+  background-color: #9ca3af; /* hover:bg-gray-400 */
+}
